@@ -1,0 +1,7 @@
+numpy==1.24.3
+onnxruntime==1.18.0
+opencv-python==4.9.0.80
+pandas==2.2.2
+torch==2.3.0
+ultralytics==8.2.76
+lapx==0.5.9

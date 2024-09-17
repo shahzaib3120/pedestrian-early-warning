@@ -12,10 +12,12 @@ OR
 pip install -r requirements.txt
 ```
 
-THEN
+Download the segmentation model from [here](https://github.com/PINTO0309/PINTO_model_zoo/tree/main/136_road-segmentation-adas-0001) and place it in the `saved_model` directory in the root of the repo.
+
+To run the code, use the following command:
 
 ```bash
-python ped_track.py --source <src>
+python ped_track.py --source src
 ```
 
 where `src` can be:
@@ -36,7 +38,7 @@ Simultaneously, the road is segmented using a segmentation model. If the predict
 
 Following image shows the working of the system:
 
-![Working](./workflow.png)
+![Working](./imgs/workflow.png)
 
 YOLOv8 model was trained on Caltech Pedestrian dataset and a pre-trained model was used for segmentation.
 
@@ -44,15 +46,15 @@ YOLOv8 model was trained on Caltech Pedestrian dataset and a pre-trained model w
 
 Following figure shows the ground truth for the dataset:
 
-![Ground Truth](./dataGT.jpg)
+![Ground Truth](./imgs/dataGT.jpg)
 
 And the following figure shows the prediction of YOLOv8 trained on the dataset:
 
-![Segmentation](./dataPred.jpg)
+![Segmentation](./imgs/dataPred.jpg)
 
 Following figure shows the training results:
 
-![Training](./results.jpg)
+![Training](./imgs/results.jpg)
 
 ## References
 
