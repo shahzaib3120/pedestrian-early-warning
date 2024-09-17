@@ -44,6 +44,12 @@ YOLOv8 model was trained on Caltech Pedestrian dataset and a pre-trained model w
 
 # Training
 
+After downloading the data, you will need to convert it to yolo friend format. Use the submodule `Caltech-Pedestrian-YOLO` for that. Make sure you cloned the submodule as well. Else use the following command to clone the submodule:
+
+```bash
+git submodule update --init --recursive
+```
+
 Following figure shows the ground truth for the dataset:
 
 ![Ground Truth](./imgs/dataGT.jpg)
@@ -77,3 +83,11 @@ that was converted for four class classification task are:
 | road     | 0.954     | 0.974     |
 | curbs    | 0.727     | 0.825     |
 | marks    | 0.707     | 0.803     |
+
+References for the dataset:
+
+Link: [Caltech Pedestrian Dataset](https://data.caltech.edu/records/f6rph-90m20)
+
+```bibtex
+@misc{dollar_wojek_schiele_perona_2009, title={Caltech Pedestrians}, DOI={10.1109/CVPR.2009.5206631}, abstractNote={The dataset contains richly annotated video, recorded from a moving vehicle, with challenging images of low resolution and frequently occluded people. We propose improved evaluation metrics, demonstrating that commonly used per-window measures are flawed and can fail to predict performance on full images. This zip file includes folders containing the dataset, code, files, and ROC curve results.}, publisher={IEEE Conference on Computer Vision and Pattern Recognition}, author={Dollar, Piotr and Wojek, Christian and Schiele, Bernt and Perona, Pietro}, year={2009}, month={Jun} }
+```
